@@ -1,0 +1,63 @@
+/* Styles that are going to be applied to tablets */
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    padding: 0;
+    justify-content: normal;
+  }
+
+  .image-container {
+    display: block;
+  }
+
+  .form {
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  .form__btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* Styles that are going to be applied to Desktop */
+@media screen and (min-width: 1024px) {
+  .form {
+    padding: 0;
+  }
+
+  .form__btn:hover {
+    background: var(--blue2);
+  }
+
+  .image-container {
+    display: none;
+  }
+
+  .video-container {
+    display: flex;
+    width: 45%;
+  }
+
+  .video-container__video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .log-in__link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.2rem;
+    position: absolute;
+    background: var(--white);
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .log-in__link:hover::after {
+    width: 100%;
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>001 Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Video -->
+      <div class="video-container">
+        <video autoplay muted loop class="video-container__video">
+          <source src="videos/workout.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <!-- Image -->
+      <div class="image-container"></div>
+
+      <!-- Form-->
+      <form class="form">
+        <h1 class="form__title">SIGN UP</h1>
+        <label class="form__label">Name</label>
+        <input type="text" placeholder="Your name" class="form__input" />
+        <label class="form__label">Email</label>
+        <input type="email" placeholder="Your email" class="form__input" />
+        <label class="form__label">Password</label>
+        <input
+          type="password"
+          placeholder="Your password"
+          class="form__input form__input--password"
+        />
+        <button type="submit" class="form__btn">Create account</button>
+
+        <!-- Sign up with -->
+        <div class="sign-up-with">
+          <span class="sign-up-with__title">Or sign up with</span>
+          <div class="sign-up-with__buttons">
+            <div class="sign-up-with__btn sign-up-with__btn--facebook">
+              <img
+                src="images/icons/facebook.png"
+                class="sign-up-with__image sign-up-with__image--facebook"
+              />
+              <span class="sign-up-with__text">Facebook</span>
+            </div>
+            <div class="sign-up-with__btn sign-up-with__btn--google">
+              <img
+                src="images/icons/google.png"
+                class="sign-up-with__image sign-up-with__image--google"
+              />
+              <span class="sign-up-with__text">Google</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Log in -->
+        <p class="log-in">
+          Already have an account? <a href="#" class="log-in__link">Log in</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
